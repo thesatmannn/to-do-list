@@ -1,0 +1,30 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    padding-left: 15px;
+    background-color: dodgerblue;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #f1f1f1;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.columns {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    height: 100vh;
+}
