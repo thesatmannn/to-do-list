@@ -5,29 +5,47 @@ html, body {
     font-family:  sans-serif;
 }
 
+.to-do {
+    width: 35px;
+    height: 35px;
+    bottom: 5%;
+    right: 5%;
+    position: absolute;
+}
+
+img {
+    width: 25px;
+    height: 25px;
+    color: aliceblue;
+}
 .background-image {
     background-image: url(tropical-green-leaves-background.jpg);
     background-size: cover;
     width: 100vw;
-   height: 100vh;
-   background-size:cover;
+    height: 100vh;
+    background-size:cover;
+    
+
 }
 
 li {
+    display: flex;
     border-bottom-color: rgb(53, 57, 59);
     list-style-type: none;
     text-decoration: none;
     font-weight:200;
-    font-size: large;
+    margin-top: 15px;
     
 }
 
 .content {
-    
+    display: flex;
+    flex-direction: column;
 }
 
-
-
+.project-btn {
+    margin-left: 25px;
+}
 .add-task {
     border: 1px;
     background-color: rgb(9, 243, 173);
@@ -44,8 +62,7 @@ li {
 
 .add-task:hover {
     transform: rotate(90deg);
-    background-color: aquamarine;
-    
+  
 }
 
 
@@ -54,6 +71,8 @@ button{
     background: none;
     color: white;
     box-shadow: rgba(61, 66, 69, 0.4) 0px 2px 12px 0.5px;
+    font-size: 15px;
+    margin-left: 15px;
 }
 
 
