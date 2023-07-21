@@ -6,3 +6,13 @@ export function defaultProject() {
    
 
 }
+
+export function openForm() {
+
+}
+
+const taskButton = document.getElementsByClassName("add-task");
+
+taskButton.addEventListener("click", () => {
+
+});
