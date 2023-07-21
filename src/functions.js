@@ -1,4 +1,6 @@
 // eslint-disable-next-line import/prefer-default-export
+const taskButton = document.getElementsByClassName("add-task");
+
 export function defaultProject() {
     const content = document.getElementsByClassName("content");
     const header = document.createElement("h1");
@@ -9,10 +11,8 @@ export function defaultProject() {
 
 export function openForm() {
 
-}
-
-const taskButton = document.getElementsByClassName("add-task");
-
 taskButton.addEventListener("click", () => {
-
+    taskButton.setAttribute()
 });
+
+}

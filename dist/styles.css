@@ -2,7 +2,7 @@
 
 html, body {
     margin: 0;
-    font-family:  sans-serif;
+    font-family: system-ui;
 }
 
 .to-do {
@@ -34,17 +34,39 @@ li {
     list-style-type: none;
     text-decoration: none;
     font-weight:200;
-    margin-top: 15px;
+    margin-top: 35px;
+    
     
 }
 
+.menu {
+    display: flex;
+    width: 150px;
+    border-radius: 4px;
+    text-align: center;
+    font-size: larger;
+    margin-right: 15px;
+
+}
 .content {
     display: flex;
     flex-direction: column;
 }
 
-.project-btn {
+.projects-btn {
     margin-left: 25px;
+    font-size: 25px;
+}
+
+.project-section {
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-between;
+}
+
+h1 {
+    padding: 15px;
+    border-bottom: 2px solid rgb(214, 211, 211);
 }
 .add-task {
     border: 1px;
@@ -57,26 +79,27 @@ li {
     bottom: 5%; 
     right: 5%;
     transition: 0.3s;   
-    
 }
 
 .add-task:hover {
     transform: rotate(90deg);
-  
 }
 
 
-button{
+button {
     border: none;
     background: none;
     color: white;
     box-shadow: rgba(61, 66, 69, 0.4) 0px 2px 12px 0.5px;
     font-size: 15px;
     margin-left: 15px;
+    cursor: pointer;
+    font-family: system-ui;
 }
 
-
-
+button:hover {
+    box-shadow: rgba(128, 132, 134, 0.4) 0px 2px 12px 0.5px;
+}
 
 .sidebar {
     backdrop-filter: blur(8px);
@@ -92,5 +115,5 @@ button{
     background-image: url(tropical-green-leaves-background.jpg);
     background-size: cover;
     width: 100vw;
-   height: 100vh;
+    height: 100vh;
 }
