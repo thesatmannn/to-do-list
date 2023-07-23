@@ -1,18 +1,7 @@
-const links = document.querySelectorAll(".sidebar a");
+import {
+    openForm,
+} from "./functions";
 
-links.forEach(link => {
-  link.addEventListener("click", function(event) {
-    event.preventDefault();
-    const selectedLink = this;
+const projectsBtn = document.getElementsByClassName("projects-btn");
+projectsBtn.addEventlistener("click", openForm);
 
-    // Remove 'active' class from all links
-    links.forEach(link => link.classList.remove("active"));
-
-    // Add 'active' class to the clicked link
-    selectedLink.classList.add("active");
-
-    // Update content based on the selected link
-    const content = document.querySelector(".content");
-    content.textContent = `You clicked on ${selectedLink.textContent} link.`;
-  });
-});
