@@ -72,6 +72,15 @@ li {
     justify-content: space-between;
 }
 
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    width: 25px;
+    height: 25px;
+    background-color: aliceblue;
+
+}
+
 h1 {
     padding: 15px;
     border-bottom: 2px solid rgb(214, 211, 211);
@@ -108,7 +117,7 @@ button {
 button:hover {
     box-shadow: rgba(128, 132, 134, 0.4) 0px 2px 12px 0.5px;
 }
-
+ 
 .selected {
     box-shadow: rgba(128, 132, 134, 0.4) 0px 2px 12px 0.5px;
 }
