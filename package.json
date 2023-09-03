@@ -18,5 +18,8 @@
   "homepage": "https://github.com/thesatmannn/to-do-list#readme",
   "devDependencies": {
     "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "date-fns": "^2.30.0"
   }
 }
